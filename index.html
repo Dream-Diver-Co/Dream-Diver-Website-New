@@ -20,6 +20,10 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@400;600;800&family=Roboto:wght@400;500;700&display=swap" rel="stylesheet"> 
 
+     <!-- owl-carousel -->
+     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css">
+     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css">
+
     <!-- Icon Font Stylesheet -->
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" rel="stylesheet">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css" rel="stylesheet">
@@ -56,7 +60,7 @@
             </div>
              <div class="col-lg-5 px-5 text-end">
                 <div class="h-100 d-lg-inline-flex align-items-center d-none">
-                    <a class="btn btn-square rounded-circle bg-light text-primary me-2" href=""><i class="fab fa-facebook-f"></i></a>
+                    <a class="btn btn-square rounded-circle bg-light text-primary-facebook me-2" href=""><i class="fab fa-facebook-f"></i></a>
                     <a class="btn btn-square rounded-circle bg-light text-primary me-2" href=""><i class="fab fa-twitter"></i></a>
                     <a class="btn btn-square rounded-circle bg-light text-primary me-2" href=""><i class="fab fa-linkedin-in"></i></a>
                     <a class="btn btn-square rounded-circle bg-light text-primary me-0" href=""><i class="fab fa-instagram"></i></a>
@@ -79,12 +83,13 @@
             <div class="navbar-nav mx-auto pe-4 py-3 py-lg-0">
                 <a href="index.html" class="nav-item nav-link active">Home</a>
                 <a href="#" class="nav-item nav-link">About Us</a>
-                <a href="#" class="nav-item nav-link">Our Services</a>
+                <a href="service.html" class="nav-item nav-link">Our Services</a>
                 <a href="#" class="nav-item nav-link ">Portfolio</a>
-                <a href="#" class="nav-item nav-link">Contact Us</a>
+                <a href="contact.html" class="nav-item nav-link">Contact Us</a>
                 <a href="#" class="nav-item nav-link">Ticket Create</a>
                 <a href="#" class="nav-item nav-link">Login</a>
                 <a href="#" class="nav-item nav-link">Registration</a>
+
             </div>
         </div>
     </nav>
@@ -92,7 +97,230 @@
 
 
 
+    <!-- Header Start -->
+    <div class="container-fluid p-0">
+        <div class="hero">
+            <h1 class="hero-text">Dream Diver </h1>
+            <!-- <h2 class="hero-text1">Dream Diver IT Solutions is a premier provider of web development services.</h2> -->
+            <!-- <p class="hero-text1">Dream Diver IT Solutions is a premier provider of web development services.</p> -->
+        </div>
+        <!-- <img class="h-500 w-100 img-fluid" src="idea.jpg" alt="Image"> -->
+    </div>
+    <!-- Header End -->
 
+    <!-- Choosing Us Start -->
+    <div class="container py-5">
+        <div class="row g-5">
+            <div class="col-md-6 wow fadeInUp" data-wow-delay="0.1s">
+                <h1 class="display-6 mb-5">Few Reasons Why People Choosing Us!</h1>
+                <p class="mb-5">Our IT Service Center stands out for several compelling reasons, making it the preferred choice for individuals and businesses alike. Firstly, our unwavering commitment to customer satisfaction sets us apart. </p>
+                <div class="d-flex mb-5">
+                    <div class="flex-shrink-0 btn-square bg-primary rounded-circle" style="width: 90px; height: 90px;">
+                        <img class="img-fluid" src="{{ asset('frontend') }}/img/icon/icon-08-light.png" alt="">
+                    </div>
+                    <div class="ms-4">
+                        <h5 class="mb-3">Trusted Service Center</h5>
+                        <span>Welcome to our trusted service center, where reliability meets excellence. Clients choose us with confidence for several compelling reasons.</span>
+                    </div>
+                </div>
+                <div class="d-flex mb-5">
+                    <div class="flex-shrink-0 btn-square bg-primary rounded-circle" style="width: 90px; height: 90px;">
+                        <img class="img-fluid" src="{{ asset('frontend') }}/img/icon/icon-10-light.png" alt="">
+                    </div>
+                    <div class="ms-4">
+                        <h5 class="mb-3">Reasonable Price</h5>
+                        <span>At our service center, we take pride in offering top-notch solutions at a reasonable price.</span>
+                    </div>
+                </div>
+                <div class="d-flex mb-0">
+                    <div class="flex-shrink-0 btn-square bg-primary rounded-circle" style="width: 90px; height: 90px;">
+                        <img class="img-fluid" src="{{ asset('frontend') }}/img/icon/icon-06-light.png" alt="">
+                    </div>
+                    <div class="ms-4">
+                        <h5 class="mb-3">24/7 Supports</h5>
+                        <span>Our 24/7 support is designed with your convenience in mind, providing peace of mind and minimizing downtime.</span>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6 wow fadeInUp" data-wow-delay="0.5s">
+                <div class="position-relative rounded overflow-hidden h-100 Choosing-body" style="min-height: 400px;">
+                    <h1 class="Choosing-img">Dream Diver</h1>
+                    <!-- <img class="position-absolute w-100 h-100" src="{{ asset('frontend') }}/img/feature.jpg" alt="image" style="object-fit: cover;"> -->
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Choosing Us End -->
+
+
+    <!-- Our Client -->
+    <div class="container">
+        <h1 class="display-3 text-center fw-bold"><span class="text-success">Our</span>Client </h1>
+        <div class="row owl-carousel-row">
+         <div class="owl-carousel owl-theme">
+            <div >
+                <div >
+                    <img src="img/testimonial-1.jpg" alt="" class="card-img-top">
+                </div>
+            </div>
+            <div >
+                <div >
+                    <img src="img/testimonial-2.jpg" alt="" class="card-img-top">
+                </div>
+            </div>
+            <div >
+                <div >
+                    <img src="img/testimonial-1.jpg" alt="" class="card-img-top">
+                </div>
+            </div>
+            <div >
+                <div >
+                    <img src="img/testimonial-3.jpg" alt="" class="card-img-top">
+                </div>
+            </div>
+            <!-- <div class="card">
+                <div class="card-body">
+                    <img src="img/testimonial-1.jpg" alt="" class="card-img-top" >
+                </div>
+                <hr />
+                <h1 class="text-center">Aeon</h1>
+            </div> -->
+          </div>
+        </div>
+    </div>
+
+            <!-- Service Start -->
+            <div class="container-xxl py-5">
+                <div class="container">
+                    <div class="text-center mx-auto wow fadeInUp" data-wow-delay="0.1s">
+                        <h1 class="display-6 mb-5"><span class="text-primary">We Provide professional IT</span>Software Development & Services</h1>
+                    </div>
+                    <div class="row g-4 justify-content-center">
+                        <div class="col-md-4 wow fadeInUp" data-wow-delay="0.1s">
+                            <div class="service-item">
+                                <a href="">
+                                    <div class="flip-box">
+                                        <div class="flip-box-inner">
+                                          <div class="flip-box-front">
+                                            <img class="img-service" src="img/service-1.jpg" alt="Paris">
+                                          </div>
+                                          <div class="flip-box-back">
+                                            <h2>Paris</h2>
+                                            <p>Software Development</p>
+                                          </div>
+                                        </div>
+                                    </div>
+                                    <p>Software Development</p>
+                                </a>
+                            </div>
+                        </div>       
+                        <div class="col-md-4 wow fadeInUp" data-wow-delay="0.1s">
+                            <div class="service-item">
+                                <a href="">
+                                    <div class="flip-box">
+                                        <div class="flip-box-inner">
+                                          <div class="flip-box-front">
+                                            <img class="img-service" src="img/service-2.jpg" alt="Paris">
+                                          </div>
+                                          <div class="flip-box-back">
+                                            <h2>Paris</h2>
+                                            <p>Mobile App Development</p>
+                                          </div>
+                                        </div>
+                                    </div>
+                                    <p>Mobile App Development</p>
+                                </a>
+                            </div>
+                        </div>  
+                        <div class="col-md-4 wow fadeInUp" data-wow-delay="0.1s">
+                            <div class="service-item">
+                                <a href="">
+                                    <div class="flip-box">
+                                        <div class="flip-box-inner">
+                                          <div class="flip-box-front">
+                                            <img class="img-service" src="img/service-3.jpg" alt="Paris">
+                                          </div>
+                                          <div class="flip-box-back">
+                                            <h2>Paris</h2>
+                                            <p>Software Services</p>
+                                          </div>
+                                        </div>
+                                    </div>
+                                    <p>Software Services</p>
+                                </a>
+                            </div>
+                        </div>  
+                        <div class="col-md-4 wow fadeInUp" data-wow-delay="0.1s">
+                            <div class="service-item">
+                                <a href="">
+                                    <div class="flip-box">
+                                        <div class="flip-box-inner">
+                                          <div class="flip-box-front">
+                                            <img class="img-service" src="img/service-4.jpg" alt="Paris">
+                                          </div>
+                                          <div class="flip-box-back">
+                                            <h2>Paris</h2>
+                                            <p class="flip-text">Web Design & Development</p>
+                                          </div>
+                                        </div>
+                                    </div>
+                                    <p>Web Design & Development</p>
+                                </a>
+                            </div>
+                        </div>  
+                        <div class="col-md-4 wow fadeInUp" data-wow-delay="0.1s">
+                            <div class="service-item">
+                                <a href="">
+                                    <div class="flip-box">
+                                        <div class="flip-box-inner">
+                                          <div class="flip-box-front">
+                                            <img class="img-service" src="img/service-5.jpg" alt="Paris">
+                                          </div>
+                                          <div class="flip-box-back">
+                                            <h2>Paris</h2>
+                                            <p>Search Engine Optimization(SEO)</p>
+                                          </div>
+                                        </div>
+                                    </div>
+                                    <p>Search Engine Optimization(SEO)</p>
+                                </a>
+                            </div>
+                        </div>  
+                        <div class="col-md-4 wow fadeInUp" data-wow-delay="0.1s">
+                            <div class="service-item">
+                                <a href="">
+                                    <div class="flip-box">
+                                        <div class="flip-box-inner">
+                                          <div class="flip-box-front">
+                                            <img class="img-service" class="img-fluid" src="img/service-6.jpg" alt="Paris">
+                                          </div>
+                                          <div class="flip-box-back">
+                                            <h2>Paris</h2>
+                                            <p>Digital Marketing</p>
+                                          </div>
+                                        </div>
+                                    </div>
+                                    <p>Digital Marketing</p>
+                                </a>
+                            </div>
+                        </div>                                   
+                        <div class="col-md-4 wow fadeInUp" data-wow-delay="0.5s">
+                            <!-- <a href="{{ route('frontend.our-service.digital-marketing')}}">
+                                <div class="service-item">
+                                    <img class="img-fluid" src="{{ asset('frontend') }}/img/service-6-n.jpg" alt="service-6">
+                                    <div class="d-flex align-items-center bg-light">
+                                        <div class="service-icon flex-shrink-0 bg-primary">
+                                            <img class="img-fluid" src="{{ asset('frontend') }}/img/icon/icon-06-light.png" alt="icon-06-light">
+                                        </div>
+                                        <a class="h4 mx-4 mb-0" href="{{ route('frontend.our-service.digital-marketing')}}">Digital Marketing</a>
+                                    </div>
+                                </div>
+                            </a> -->
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Service End -->
 
     <!-- Footer Start -->
     <div class="container-fluid footer mt-5 pt-5 wow fadeIn" data-wow-delay="0.1s">
@@ -156,6 +384,30 @@
 
     <!-- Template Javascript -->
     <script src="js/main.js"></script>
+
+     <!-- jquery cdn link -->
+     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js" integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+     <!-- owl carousel -->
+     <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js" integrity="sha512-bPs7Ae6pVvhOSiIcyUClR7/q2OAsRiovw4vAkX+zJbw3ShAeeqezq50RIIcIURq7Oa20rW2n2q+fyXBNcU9lrw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+     <script>
+         $('.owl-carousel').owlCarousel({
+             loop:true,
+             margin:10,
+             nav:true,
+             responsive:{
+                 0:{
+                     items:1
+                 },
+                 600:{
+                     items:3
+                 },
+                 1000:{
+                     items:4
+                 }
+             }
+         })
+     </script>
 </body>
 
 </html>

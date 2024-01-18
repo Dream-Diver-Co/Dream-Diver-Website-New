@@ -91,14 +91,14 @@
 .navbar .navbar-nav .nav-link {
     margin-left: 25px;
     padding: 10px 0;
-    color: #696E77;
+    color: #000000;
     font-weight: 400;
     outline: none;
 }
 
 .navbar .navbar-nav .nav-link:hover,
 .navbar .navbar-nav .nav-link.active {
-    color: var(--primary);
+    color: #d63384;
 }
 
 .navbar .dropdown-toggle::after {
@@ -311,7 +311,7 @@
 }
 
 .page-header {
-    background: linear-gradient(rgba(1, 10, 53, .8), rgba(1, 10, 53, .8)), url(../img/carousel-1.jpg) center center no-repeat;
+    background-color: #663399;
     background-size: cover;
 }
 

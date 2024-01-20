@@ -42,7 +42,7 @@
 
 
     <!-- Topbar Start -->
-    <div class="container-fluid text-white-50 py-2 px-0 d-none d-lg-block">
+    <div class="container-fluid bg-dark text-white-50 py-2 px-0 d-none d-lg-block">
         <div class="row gx-0 align-items-center">
             <div class="col-lg-7 px-5 text-start">
                 <div class="h-100 d-inline-flex align-items-center me-4">
@@ -56,16 +56,15 @@
             </div>
              <div class="col-lg-5 px-5 text-end">
                 <div class="h-100 d-lg-inline-flex align-items-center d-none">
-                    <a class="btn btn-square rounded-circle bg-lighter text-primaryer me-2" href=""><i class="fab fa-facebook-f"></i></a>
-                    <a class="btn btn-square rounded-circle bg-light-x text-primaryer me-2" href=""><i class="fab fa-twitter"></i></a>
-                    <a class="btn btn-square rounded-circle bg-light-in text-primaryer me-2" href=""><i class="fab fa-linkedin-in"></i></a>
-                    <a class="btn btn-square rounded-circle bg-light-gram text-primaryer me-0" href=""><i class="fab fa-instagram"></i></a>
+                    <a class="btn btn-square rounded-circle bg-light text-primary me-2" href=""><i class="fab fa-facebook-f"></i></a>
+                    <a class="btn btn-square rounded-circle bg-light text-primary me-2" href=""><i class="fab fa-twitter"></i></a>
+                    <a class="btn btn-square rounded-circle bg-light text-primary me-2" href=""><i class="fab fa-linkedin-in"></i></a>
+                    <a class="btn btn-square rounded-circle bg-light text-primary me-0" href=""><i class="fab fa-instagram"></i></a>
                 </div>
             </div>
         </div>
     </div>
     <!-- Topbar End -->
-
 
     <!-- Navbar Start -->
     <nav class="navbar navbar-expand-lg bg-white navbar-light sticky-top px-4 px-lg-5">
@@ -78,113 +77,124 @@
         <div class="collapse navbar-collapse" id="navbarCollapse">
             <div class="navbar-nav mx-auto pe-4 py-3 py-lg-0">
                 <a href="index.html" class="nav-item nav-link active">Home</a>
-                <a href="#" class="nav-item nav-link">About Us</a>
+                <a href="history.html" class="nav-item nav-link">About Us</a>
                 <a href="service.html" class="nav-item nav-link">Our Services</a>
                 <a href="#" class="nav-item nav-link ">Portfolio</a>
                 <a href="contact.html" class="nav-item nav-link">Contact Us</a>
                 <a href="#" class="nav-item nav-link">Ticket Create</a>
-                <a href="#" class="nav-item nav-link">Login</a>
-                <a href="#" class="nav-item nav-link">Registration</a>
+                <a href="login.html" class="nav-item nav-link">Login</a>
+                <a href="registration.html" class="nav-item nav-link">Registration</a>
+                <a href="#" class="nav-item nav-link">FAQ</a>
+                <a href="#" class="nav-item nav-link">Career</a>
+                <a href="#" class="nav-item nav-link">Review</a>
+
             </div>
         </div>
     </nav>
     <!-- Navbar End -->
 
-
-    <!-- Page Header Start -->
-    <div class="container-fluid page-header top-bottom mb-5 wow fadeIn" data-wow-delay="0.1s">
+      <!-- Page Header Start -->
+      <div class="container-fluid page-header py-5" data-wow-delay="0.1s">
         <div class="container text-center py-5">
-            <h4 class="display-4 text-white animated slideInDown mb-4">Contact Us</h4>
+            <h1 class="display-4 text-white animated slideInDown mb-4">About Us</h1>
             <nav aria-label="breadcrumb animated slideInDown">
                 <ol class="breadcrumb justify-content-center mb-0">
-                    <li class="breadcrumb-item"><a href="#">Home</a></li>
-                    <li class="breadcrumb-item active" aria-current="page">Contact</li>
+                    <!--<li class="breadcrumb-item"><a href="{{ url('/') }}">Home</a></li>-->
+                    <!--<li class="breadcrumb-item active" aria-current="page">About</li>-->
                 </ol>
             </nav>
         </div>
     </div>
     <!-- Page Header End -->
 
-
-    <!-- Contact Start -->
+    <ul class="nav justify-content-center">
+        <li class="nav-item">
+          <a class="nav-link active" aria-current="page" style="border-radius: 5px; background-color: #7A8499;" href="history.html">Our History</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" style="border-radius: 5px; background-color: #7A8499;" href="mission-vision.html">Our Mission and Vision</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" style="border-radius: 5px; background-color: #7A8499;"  href="core-values.html">Core Values</a>
+        </li>
+        <!-- <li class="nav-item">
+          <a class="nav-link disabled" aria-disabled="true">Disabled</a>
+        </li> -->
+      </ul>
+      <hr>
+    <!-- About Start -->
     <div class="container-xxl py-5">
         <div class="container">
-            <div class="row g-5">
-                <div class="col-lg-6 wow fadeIn" data-wow-delay="0.1s">
-                    <h1 class="display-6 mb-5">Please Contact Us</h1>
-                    <form>
-                        <div class="row g-3">
-                            <div class="col-md-6">
-                                <div class="form-floating">
-                                    <input type="text" class="form-control" id="name" placeholder="Your Name">
-                                    <label for="name">Your Name</label>
-                                </div>
-                            </div>
-                            <div class="col-md-6">
-                                <div class="form-floating">
-                                    <input type="email" class="form-control" id="email" placeholder="Your Email">
-                                    <label for="email">Your Email</label>
-                                </div>
-                            </div>
-                            <div class="col-12">
-                                <div class="form-floating">
-                                    <input type="text" class="form-control" id="subject" placeholder="Subject">
-                                    <label for="subject">Subject</label>
-                                </div>
-                            </div>
-                            <div class="col-12">
-                                <div class="form-floating">
-                                    <textarea class="form-control" placeholder="Leave a message here" id="message" style="height: 100px"></textarea>
-                                    <label for="message">Message</label>
-                                </div>
-                            </div>
-                            <div class="col-12">
-                                <button class="btn btn-primary py-3 px-5" type="submit">Send Message</button>
-                            </div>
-                        </div>
-                    </form>
-                </div>
-                <div class="col-lg-6 wow fadeIn" data-wow-delay="0.5s" style="min-height: 450px;">
-                    <div class="position-relative overflow-hidden h-100">
-                        <iframe class="position-relative w-100 h-100"
-                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3001156.4288297426!2d-78.01371936852176!3d42.72876761954724!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4ccc4bf0f123a5a9%3A0xddcfc6c1de189567!2sNew%20York%2C%20USA!5e0!3m2!1sen!2sbd!4v1603794290143!5m2!1sen!2sbd"
-                        frameborder="0" style="min-height: 450px; border:0;" allowfullscreen="" aria-hidden="false"
-                        tabindex="0"></iframe>
-                    </div>
-                </div>
+            <div class="row">
+
+                <p class="about-h1">Our History</p>
+                <br><br>
+                <p class="about-h11">Our Birth</p>
+                <p class="about-us">
+                    We started our journey in 2017 in Rotterdam, Netherlands. Initially, the founder, M A Hasan,
+                    started Dream Diver with the motive of offering IT services and solutions. But after three
+                    years, he has diversified his organization in the field of Digital Marketing, with Content
+                    Writing, Graphic Designing, and SEO optimization as the primary focus areas. The founder is
+                    a passionate entrepreneur and a philanthropist conducting free IT training to anyone showing
+                    interest. This is a great initiative as it has been helping a lot of people, especially the youth of
+                    the country to seek employment.
+                </p>
+                <br>
+                <p class="about-us">
+                    After three years of hard work, dedication, and passion, we have gained satisfied customers
+                    on the market along with a skilled team catering to the demands of every client. Our
+                    experience, knowledge, and skill also evolved along with the growth of Dream Diver. The
+                    end-to-end solutions offered by us along with our solid delivery and implementation
+                </p>
+                <br>
+                <p class="about-h11">Who We Are</p>
+                <p class="about-us">We are a team of young professionals with high skills and expertise in the field. In the span
+                of three years, we have helped several clients achieve their business goals through scalable,
+                and optimized IT and Digital Marketing services and solutions. The end-to-end solution
+                offered by us along with our solid delivery and implementation system assures optimized
+                client ROI. We have extensive knowledge and experience in mobile application development
+                for Android, iOS, and Windows along with digital marketing services. We are here to cater to
+                all your business needs seamlessly.
+            </p>
+
+                <p class="about-us">If you are looking for extra information, you can write to us and we will help you get
+                    enlightened about us.</p>
+                <br>
+            
+
             </div>
         </div>
     </div>
-    <!-- Contact End -->
+    <!-- About End -->
 
 
-   
+
     <!-- Footer Start -->
-    <div class="container-fluid footer mt-5 pt-5 wow fadeIn" data-wow-delay="0.1s">
+    <div class="container-fluid bg-dark footer mt-5 pt-5 wow fadeIn" data-wow-delay="0.1s">
         <div class="container py-5">
             <div class="row g-5">
                 <div class="col-lg-3 col-md-6">
-                    <h5 class="text-highlight mb-4">Get In Touch</h5>
+                    <h5 class="text-light mb-4">Get In Touch</h5>
                     <p><i class="fa fa-map-marker-alt me-3"></i>Weena zuid 130, ext 405, 3012 NC Rotterdam, Netherlands.</p>
                     <a href="tel:+31644215009" style="color: #7A8499;"><i class="fa fa-phone-alt me-3"></i>+31644215009</a><br>
                     <a href="mailto:info@dreamdiver.nl" style="color: #7A8499;"><i class="fa fa-envelope me-3"></i>info@dreamdiver.nl</a>
                 </div>
                 <div class="col-lg-3 col-md-6">
-                    <h5 class="text-highlight mb-4">Our Services</h5>
+                    <h5 class="text-light mb-4">Our Services</h5>
                     <a class="btn btn-link" href="">AC Installation</a>
                     <a class="btn btn-link" href="">Cooling Services</a>
                     <a class="btn btn-link" href="">Heating Services</a>
                     <a class="btn btn-link" href="">Annual Inspections</a>
                 </div>
                 <div class="col-lg-3 col-md-6">
-                    <h5 class="text-highlight mb-4">Quick Links</h5>
+                    <h5 class="text-light mb-4">Quick Links</h5>
                     <a class="btn btn-link" href="">About Us</a>
                     <a class="btn btn-link" href="">Contact Us</a>
                     <a class="btn btn-link" href="">Our Services</a>
                     <a class="btn btn-link" href="">Terms & Condition</a>
                 </div>
                 <div class="col-lg-3 col-md-6">
-                    <h5 class="text-highlight mb-4">Follow Us</h5>
+                    <h5 class="text-light mb-4">Follow Us</h5>
                     <div class="d-flex">
                         <a class="btn btn-square rounded-circle me-1" href=""><i class="fab fa-twitter"></i></a>
                         <a class="btn btn-square rounded-circle me-1" href=""><i class="fab fa-facebook-f"></i></a>
@@ -194,15 +204,15 @@
                 </div>
             </div>
         </div>
-        <div class="container py-5 copyright">
+        <div class="container-fluid copyright">
             <div class="container">
                 <div class="row">
                     <div class="col-md-6 text-center text-md-start mb-3 mb-md-0">
-                        &copy; 2017, Dream Diver IT Solutions. All Rights Reserved.
+                        &copy; <a href="#">Your Site Name</a>, All Right Reserved.
                     </div>
                     <div class="col-md-6 text-center text-md-end">
                         <!--/*** This template is free as long as you keep the footer author’s credit link/attribution link/backlink. If you'd like to use the template without the footer author’s credit link/attribution link/backlink, you can purchase the Credit Removal License from "https://htmlcodex.com/credit-removal". Thank you for your support. ***/-->
-                        Developed By <a href="https://dreamdiver.nl">Dream Diver</a> 
+                        Designed By <a href="https://htmlcodex.com">HTML Codex</a>  Distributed by <a href="https://themewagon.com">ThemeWagon</a>
                     </div>
                 </div>
             </div>
@@ -212,7 +222,7 @@
 
 
     <!-- Back to Top -->
-    <!-- <a href="#" class="btn btn-lg btn-primary btn-lg-square rounded-circle back-to-top"><i class="bi bi-arrow-up"></i></a> -->
+    <a href="#" class="btn btn-lg btn-primary btn-lg-square rounded-circle back-to-top"><i class="bi bi-arrow-up"></i></a>
 
 
     <!-- JavaScript Libraries -->

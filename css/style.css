@@ -281,6 +281,27 @@
 .logo h1 a span {
     color: #5a88ca;
 }
+/* about-nav */
+.about-nav{
+    margin-top: 10px;
+    margin-bottom: -15px;
+}
+.about-history{
+    background-color: #e9c8c8;
+    border-radius: 5px;
+    
+}
+.about-mission{
+    background-color: #e9c8c8;
+    border-radius: 5px;
+    
+}
+.about-core{
+    background-color: #e9c8c8;
+    border-radius: 5px;
+    
+}
+
 
 /*** Header ***/
 .carousel-caption {
@@ -584,3 +605,8 @@
 .footer .copyright a:hover {
     color: #FFFFFF;
 }
+
+
+
+
+

@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        /* Style for menu items */
+        .menu {
+            list-style-type: none;
+            padding: 0;
+            display: flex;
+        }
+
+        .menu-item {
+            margin: 0 10px;
+            cursor: pointer;
+            padding: 5px 10px;
+            border: 1px solid #ccc;
+            background-color: #f2f2f2;
+        }
+
+        /* Active menu item style */
+        .active {
+            background-color: #4CAF50;
+            color: white;
+        }
+    </style>
+</head>
+<body>
+
+<!-- Menu HTML -->
+<ul class="menu">
+    <li class="menu-item active" onclick="activateMenu(1)">
+        <a class="nav-item nav-link" aria-current="page" href="history.html">Our History</a>
+    </li>
+    <li class="menu-item" onclick="activateMenu(2)"><a href="history.html">Menu 2</a></li>
+    <li class="menu-item" onclick="activateMenu(3)">Menu 3</li>
+    <li class="menu-item" onclick="activateMenu(4)">Menu 4</li>
+    <li class="menu-item" onclick="activateMenu(5)">Menu 5</li>
+</ul>
+
+<script>
+    // JavaScript to handle menu activation
+    function activateMenu(menuNumber) {
+        // Deactivate all menu items
+        var menuItems = document.querySelectorAll('.menu-item');
+        menuItems.forEach(function(item) {
+            item.classList.remove('active');
+        });
+
+        // Activate the clicked menu item
+        var activeMenu = document.querySelector('.menu-item:nth-child(' + menuNumber + ')');
+        activeMenu.classList.add('active');
+    }
+</script>
+
+</body>
+</html>

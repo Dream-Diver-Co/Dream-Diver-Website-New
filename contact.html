@@ -96,7 +96,7 @@
 
 
     <!-- Page Header Start -->
-    <div class="container-fluid page-header top-bottom mb-5 wow fadeIn" data-wow-delay="0.1s">
+    <div class="container-fluid page-header top-bottom wow fadeIn" data-wow-delay="0.1s">
         <div class="container text-center py-5">
             <h4 class="display-4 text-white animated slideInDown mb-4">Contact Us</h4>
             <nav aria-label="breadcrumb animated slideInDown">
@@ -108,9 +108,121 @@
         </div>
     </div>
     <!-- Page Header End -->
-
+  
+            
+        
+   
 
     <!-- Contact Start -->
+    <div id="container" class="container container-cod">
+        <!-- FORM SECTION -->
+        <div class="row-cod">
+            <!-- SIGN UP -->
+            <div class="col align-items-center flex-col flex-sign-up sign-up">
+                <div class="form-wrapper align-items-center">
+                    <div class="form sign-up">
+                        <div class="input-group">
+                            <i class='bx bxs-user'></i>
+                            <input type="text" placeholder="Your Name">
+                        </div>
+                        <div class="input-group">
+                            <i class='bx bx-mail-send'></i>
+                            <input type="email" placeholder="Email">
+                        </div>
+                        <div class="input-group">
+                            <i class='bx bxs-lock-alt'></i>
+                            <input type="text" placeholder="Subject">
+                        </div>
+                        <div class="input-group">
+                            <i class='bx bxs-lock-alt'></i>
+                            <input type="password" placeholder="Confirm password">
+                        </div>
+                        <button>
+                            Sign up
+                        </button>
+                        <p>
+                            <span>
+                                Already have an account?
+                            </span>
+                            <b onclick="toggle()" class="pointer">
+                               FAQ
+                            </b>
+                        </p>
+                    </div>
+                </div>
+            
+            </div>
+            <!-- END SIGN UP -->
+            <!-- SIGN IN -->
+            <div class="col align-items-center flex-col flex-sign-in sign-in">
+                <div class="form-wrapper align-items-center">
+                    <div class="form sign-in">
+                        <div class="input-group">
+                            <i class='bx bxs-user'></i>
+                            <input type="text" placeholder="Username">
+                        </div>
+                        <div class="input-group">
+                            <i class='bx bxs-lock-alt'></i>
+                            <input type="password" placeholder="Password">
+                        </div>
+                        <button>
+                            Sign in
+                        </button>
+                        <p>
+                            <b>
+                                Forgot password?
+                            </b>
+                        </p>
+                        <p>
+                            <span>
+                                Don't have an account?
+                            </span>
+                            <b onclick="toggle()" class="pointer">
+                                Sign up here
+                            </b>
+                        </p>
+                    </div>
+                </div>
+                <div class="form-wrapper">
+        
+                </div>
+            </div>
+            <!-- END SIGN IN -->
+        </div>
+        <!-- END FORM SECTION -->
+        <!-- CONTENT SECTION -->
+        <div class="row content-row">
+            <!-- SIGN IN CONTENT -->
+            <div class="col align-items-center flex-col">
+                <div class="text sign-in">
+                    <h2>
+                        Contact Us
+                    </h2>
+                    
+                </div>
+                <div class="img sign-in">
+        
+                </div>
+            </div>
+            <!-- END SIGN IN CONTENT -->
+            <!-- SIGN UP CONTENT -->
+            <div class="col align-items-center flex-col">
+                <div class="img sign-up">
+                
+                </div>
+                <div class="text sign-up">
+                    <h2>
+                     Frequenly Asked 
+                     <br>
+                     Questions
+                    </h2>
+    
+                </div>
+            </div>
+            <!-- END SIGN UP CONTENT -->
+        </div>
+        <!-- END CONTENT SECTION -->
+    </div>
     <div class="container-xxl py-5">
         <div class="container">
             <div class="row g-5">
@@ -225,6 +337,18 @@
 
     <!-- Template Javascript -->
     <script src="js/main.js"></script>
+    <script>
+        let container = document.getElementById('container')
+
+        toggle = () => {
+            container.classList.toggle('sign-in')
+            container.classList.toggle('sign-up')
+        }
+
+        setTimeout(() => {
+            container.classList.add('sign-in')
+        }, 200)
+    </script>
 </body>
 
 </html>

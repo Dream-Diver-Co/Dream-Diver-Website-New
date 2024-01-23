@@ -152,25 +152,191 @@
 }
 
 /* Hero Section  */
-.hero{
-    height: 800px;
-    background-color: #f5f5f5;
-    padding-top: 400px;  
-  }
-  .hero-text{
-      text-align: center;
-      animation: mymove 2s infinite;
-  }
-  .hero-text1{
-    text-align: center;
-    padding-top: 400px;
-  }
-  @keyframes mymove {
-      100% {transform: rotate(180deg);}
+.hero {
+  height: 600px;
+  background-color: #ffffff;  
+  display: flex;
+  align-items: center;
+  justify-content: center; /* Center the content horizontally and vertically */
+}
+
+.solar {
+  font-size: 6px;
+  width: 40em;
+  height: 40em;
+  position: relative;
+  margin: auto; /* Center the solar system within the hero container */
+}
+  img{
+    height: 130%;
+    width: 130%;
+}
+.sun {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    top: 15em;
+    left: 15em;
+    width: 10em;
+    height: 10em;
+    border-radius: 50%;
+    box-shadow: 0 0 3em rgb(255, 128, 0);
+    /* animation: orbit 50s linear infinite; */
+}
+.jupiter,
+.saturn,
+.uranus,
+.neptune,
+.pluto {
+    position: absolute;
+}
+
+.jupiter {
+    top: -2em;
+    left: -2em;
+    width: 70em;
+    height: 70em; 
+    animation: orbit 21s linear infinite;
+}
+.saturn {
+    top: -7em;
+    left: -7em;
+    width: 55em;
+    height: 55em; 
+    animation: orbit 17s linear infinite;
+}
+.uranus {
+    top: -12em;
+    left: -12em;
+    width: 65em;
+    height: 65em; 
+    animation: orbit 19s linear infinite;
+}
+.neptune {
+    top: -17em;
+    left: -17em;
+    width: 75em;
+    height: 75em; 
+    animation: orbit 15s linear infinite;
+}
+.pluto {
+    top: -22em;
+    left: -22em;
+    width: 85em;
+    height: 85em; 
+    animation: orbit 18s linear infinite;
+}
+
+.mercury::before,
+.venus::before,
+.earth::before,
+.moon::before,
+.mars::before,
+.jupiter::before,
+.saturn::before,
+.uranus::before,
+.neptune::before,
+.pluto::before{
+    content: '';
+    position: absolute;
+    border-radius: 50%;
+    animation: orbit 30s linear infinite;
+}
+.mercury::before {
+    top: 1.5em;
+    right: 0.8em;
+    width: 2em;
+    height: 2em;
+    background-image: url('./images/Service.png');
+    background-size: cover;
+}
+.venus::before {
+    top: 2em;
+    right: 2em;
+    width: 2em;
+    height: 2em;
+    background-image: url('./images/Service.png');
+    background-size: cover;
+}
+.earth::before {
+    top: 3em;
+    right: 0em;
+    width: 5em;
+    height: 5em;
+    background-image: url('./images/Service.png');
+    background-size: cover;
+}
+
+.moon::before {
+    top: 0.8em;
+    right: 0.2em;
+    width: 1.2em;
+    height: 1.2em;
+    background-image: url('./images/Service.png');
+    background-size: cover;
+}
+.mars::before {
+    top: 5em;
+    right: 3em;
+    width: 3em;
+    height: 3em;
+    background-image: url('./images/Service.png');
+    background-size: cover;
+}
+.jupiter::before {
+    top: 6em;
+    right: 3em;
+    width: 10em;
+    height: 10em;
+    background-image: url('./images/Service.png');
+    background-size: cover;
+}
+.saturn::before {
+    top: 7.5em;
+    right: 5em;
+    width: 4.5em;
+    height: 4.5em;
+    background-image: url('./images/Service.png');
+    background-size: cover;
+}
+.uranus::before {
+    top: 9em;
+    right: 6.5em;
+    width: 4em;
+    height: 4em;
+    background-image: url('./images/Service.png');
+    background-size: cover;
+}
+.neptune::before {
+    top: 10em;
+    right: 8em;
+    width: 4em;
+    height: 4em;
+    background-image: url('./images/Service.png');
+    background-size: cover;
+}
+.pluto::before {
+    top: 11em;
+    right: 10em;
+    width: 4em;
+    height: 4em;
+    background-image: url('./images/Service.png');
+    background-size: cover;
+}
+
+.star {
+    position: absolute;
+    background-color: white;
+    border-radius: 50%;
+    z-index: -1;
+}
+
+@keyframes orbit {
+    to {
+        transform: rotate(360deg);
     }
-  .hero-text {
-      animation: mymove 5s infinite;
-  }
+}
 
   /* Choosing us */
   .Choosing-body{

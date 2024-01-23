@@ -460,9 +460,17 @@
     color: #5a88ca;
 }
 /* about-nav */
-.about-nav{
+.nav-pills{
     margin-top: 10px;
-    margin-bottom: -15px;
+    margin-bottom: -15px !important;
+    text-align: center !important;
+}
+.nav-pills .nav-link {
+  border-radius: 13px;
+}
+.nav-pills .nav-link.active, .nav-pills .show>.nav-link {
+  color: #fff;
+  background-color: #FF4f00;
 }
 .about-history{
     background-color: #e9c8c8;

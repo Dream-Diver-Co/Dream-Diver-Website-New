@@ -99,60 +99,85 @@
     </nav>
     <!-- Navbar End -->
 
-  <!-- ======= Portfolio Section ======= -->
-  <div id="portfolio" class="paddsection">
+  
+    <main id="main">
 
-    <div class="container">
-      <div class="section-title text-center">
-        <h2>My Portfolio</h2>
-      </div>
-    </div>
+        <!-- ======= Breadcrumbs Section ======= -->
+        <section class="breadcrumbs">
+          <div class="container">
+    
+            <div class="d-flex justify-content-between align-items-center">
+              <h2>Portfolio Details</h2>
+              
+              <div class="container top-bottom mb-5 wow fadeIn" data-wow-delay="0.1s">
+                <ul class="nav nav-pills mb-3" id="pills-tab" role="tablist">
+               <li class="nav-item" role="presentation">
+                 <button class="nav-link active" id="pills-home-tab" data-bs-toggle="pill" data-bs-target="#pills-home" type="button" role="tab" aria-controls="pills-home" aria-selected="true">Project 1</button>
+               </li>
+               <li class="nav-item" role="presentation">
+                 <button class="nav-link" id="pills-profile-tab" data-bs-toggle="pill" data-bs-target="#pills-profile" type="button" role="tab" aria-controls="pills-profile" aria-selected="false">Project 2</button>
+               </li>
+               <li class="nav-item" role="presentation">
+                 <button class="nav-link" id="pills-contact-tab" data-bs-toggle="pill" data-bs-target="#pills-contact" type="button" role="tab" aria-controls="pills-contact" aria-selected="false">Project 3</button>
+               </li>
+     
+             </ul>
+             <div class="tab-content" id="pills-tabContent">
+               <div class="tab-pane fade show active" id="pills-home" role="tabpanel" aria-labelledby="pills-home-tab" tabindex="0">This is some placeholder content the Home tab's associated content. Clicking another tab will toggle the visibility of this one for the next. The tab JavaScript swaps classes to control the content visibility and styling. You can use it with tabs, pills, and any other .nav-powered navigation.</div>
+               <div class="tab-pane fade" id="pills-profile" role="tabpanel" aria-labelledby="pills-profile-tab" tabindex="0">This is some placeholder content the Home tab's associated content. Clicking another tab will toggle the visibility of this one for the next. The tab JavaScript swaps classes to control the content visibility and styling</div>
+               <div class="tab-pane fade" id="pills-contact" role="tabpanel" aria-labelledby="pills-contact-tab" tabindex="0">This is some placeholder content the Home tab's associated content. Clicking another tab will toggle</div>
+             </div>
+             
+          </div>	
 
-    <div class="container">
-
-      <div class="row portfolio-container">
-
-        <div class="col-lg-4 col-md-6 portfolio-item filter-app">
-          <a href="portfolio-details.html" class="details-link" title="More Details">
-            <img src="img/portfolio/portfolio-1.jpg" class="img-fluid" alt="portfolio-1">
-         </a>
-        </div>
-
-        <div class="col-lg-4 col-md-6 portfolio-item filter-web">
-          <a href="portfolio-details.html" class="details-link" title="More Details">
-           <img src="img/portfolio/portfolio-2.jpg" class="img-fluid" alt="portfolio-2">
-         </a>
-        </div>
-
-        <div class="col-lg-4 col-md-6 portfolio-item filter-app">
-          <a href="portfolio-details.html" class="details-link" title="More Details">
-           <img src="img/portfolio/portfolio-3.jpg" class="img-fluid" alt="portfolio-3">
-          </a>
-        </div>
-
-        <div class="col-lg-4 col-md-6 portfolio-item filter-card">
-          <a href="portfolio-details.html" class="details-link" title="More Details">
-          <img src="img/portfolio/portfolio-4.jpg" class="img-fluid" alt="portfolio-4">
-          </a>
-        </div>
-
-        <div class="col-lg-4 col-md-6 portfolio-item filter-web">
-          <a href="portfolio-details.html" class="details-link" title="More Details">
-          <img src="img/portfolio/portfolio-5.jpg" class="img-fluid" alt="portfolio-5">
-          </a>
-        </div>
-
-        <div class="col-lg-4 col-md-6 portfolio-item filter-app">
-          <a href="portfolio-details.html" class="details-link" title="More Details">
-            <img src="img/portfolio/portfolio-6.jpg" class="img-fluid" alt="portfolio-6">
-          </a>
-        </div>
-
-      </div>
-
-    </div>
-
-  </div><!-- End Portfolio Section -->
+            </div>
+    
+          </div>
+        </section><!-- Breadcrumbs Section -->
+    
+        <!-- ======= Portfolio Details Section ======= -->
+        <section id="portfolio-details" class="portfolio-details">
+          <div class="container">
+    
+            <div class="row gy-4">
+    
+              <div class="col-lg-8">
+                <div class="portfolio-details-slider swiper">
+                  <div class="swiper-wrapper align-items-center">
+    
+                    <div class="swiper-slide">
+                      <img src="img/portfolio/portfolio-details-1.jpg" alt="">
+                    </div>
+    
+                  </div>
+                  <div class="swiper-pagination"></div>
+                </div>
+              </div>
+    
+              <div class="col-lg-4">
+                <div class="portfolio-info">
+                  <h3>Project information</h3>
+                  <ul>
+                    <li><strong>Category</strong>: Web design</li>
+                    <li><strong>Client</strong>: ASU Company</li>
+                    <li><strong>Project date</strong>: 01 March, 2020</li>
+                    <li><strong>Project URL</strong>: <a href="#">www.example.com</a></li>
+                  </ul>
+                </div>
+                <div class="portfolio-description">
+                  <h2>This is an example of portfolio detail</h2>
+                  <p>
+                    Autem ipsum nam porro corporis rerum. Quis eos dolorem eos itaque inventore commodi labore quia quia. Exercitationem repudiandae officiis neque suscipit non officia eaque itaque enim. 
+                  </p>
+                </div>
+              </div>
+    
+            </div>
+    
+          </div>
+        </section><!-- End Portfolio Details Section -->
+    
+      </main><!-- End #main -->
 
 
 

@@ -78,17 +78,16 @@
         <div class="collapse navbar-collapse" id="navbarCollapse">
             <div class="navbar-nav mx-auto pe-4 py-3 py-lg-0">
                 <a href="index.html" class="nav-item nav-link active">Home</a>
-                <a href="history.html" class="nav-item nav-link">About Us</a>
+                <a href="about-us.html" class="nav-item nav-link">About Us</a>
                 <a href="service.html" class="nav-item nav-link">Our Services</a>
-                <a href="#" class="nav-item nav-link ">Portfolio</a>
+                <a href="portfolio.html" class="nav-item nav-link ">Portfolio</a>
                 <a href="contact.html" class="nav-item nav-link">Contact Us</a>
                 <a href="ticket.html" class="nav-item nav-link">Support Ticket</a>
                 <a href="login.html" class="nav-item nav-link">Login</a>
                 <a href="registration.html" class="nav-item nav-link">Registration</a>
                 <a href="faq.html" class="nav-item nav-link">FAQ</a>
-                <a href="#" class="nav-item nav-link">Career</a>
-                <a href="#" class="nav-item nav-link">Review</a>
-
+                <a href="career.html" class="nav-item nav-link">Career</a>
+                <a href="review.html" class="nav-item nav-link">Review</a>
             </div>
         </div>
     </nav>
@@ -346,18 +345,29 @@
 
     <!-- Template Javascript -->
     <script src="js/main.js"></script>
-    <script>
-        let container = document.getElementById('container')
+     <!-- jquery cdn link -->
+     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js" integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 
-        toggle = () => {
-            container.classList.toggle('sign-in')
-            container.classList.toggle('sign-up')
-        }
+     <!-- owl carousel -->
+     <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js" integrity="sha512-bPs7Ae6pVvhOSiIcyUClR7/q2OAsRiovw4vAkX+zJbw3ShAeeqezq50RIIcIURq7Oa20rW2n2q+fyXBNcU9lrw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+     <script>
+         $('.owl-carousel').owlCarousel({
+             loop:true,
+             margin:10,
+             nav:true,
+             responsive:{
+                 0:{
+                     items:1
+                 },
+                 600:{
+                     items:3
+                 },
+                 1000:{
+                     items:4
+                 }
+             }
+         })
+     </script>
 
-        setTimeout(() => {
-            container.classList.add('sign-in')
-        }, 200)
-    </script>
 </body>
-
 </html>

@@ -117,7 +117,7 @@
         <!-- FORM SECTION -->
         <div class="row-cod">
             <!-- SIGN IN -->
-            <div class="col align-items-center flex-col flex-sign-in sign-in ">
+            <div class="col align-items-center flex-col flex-sign-in sign-in">
                 <div class="form-wrapper form-contact align-items-center">
                     <div class="form sign-in">
                         <h1>Please Contact Us</h1>
@@ -155,9 +155,6 @@
                         </p>
                     </div>
                 </div>
-                <div class="form-wrapper">
-        
-                </div>
             </div>
             <!-- END SIGN IN -->
         </div>
@@ -166,7 +163,6 @@
         <div class="row content-row">
             <!-- SIGN IN CONTENT -->
             <div class="col align-items-center flex-col">
-                <a href="">
                 <div class=" text contact-text sign-in">
                     <h2>
                         Contact Us
@@ -176,12 +172,12 @@
                 <div class="img sign-in">
         
                 </div>
-                </a>
             </div>
             <!-- END SIGN IN CONTENT -->
         </div>
         <!-- END CONTENT SECTION -->
     </div>
+    
     <div class="container-xxl py-5">
         <div class="container">
             <div class="row g-5">
@@ -302,23 +298,17 @@
      <!-- owl carousel -->
      <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js" integrity="sha512-bPs7Ae6pVvhOSiIcyUClR7/q2OAsRiovw4vAkX+zJbw3ShAeeqezq50RIIcIURq7Oa20rW2n2q+fyXBNcU9lrw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
      <script>
-         $('.owl-carousel').owlCarousel({
-             loop:true,
-             margin:10,
-             nav:true,
-             responsive:{
-                 0:{
-                     items:1
-                 },
-                 600:{
-                     items:3
-                 },
-                 1000:{
-                     items:4
-                 }
-             }
-         })
-     </script>
+        let container = document.getElementById('container')
+
+        toggle = () => {
+            container.classList.toggle('sign-in')
+            container.classList.toggle('sign-up')
+        }
+
+        setTimeout(() => {
+            container.classList.add('sign-in')
+        }, 200)
+    </script>
 
 </body>
 </html>

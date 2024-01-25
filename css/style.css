@@ -190,7 +190,7 @@
   position: relative;
   margin: auto; /* Center the solar system within the hero container */
 }
-  img{
+.sun-img{
     height: 130%;
     width: 130%;
 }

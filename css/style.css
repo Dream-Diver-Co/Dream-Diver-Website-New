@@ -345,7 +345,7 @@
 }
 
   /* Choosing us */
-  .Choosing-body{
+  /* .Choosing-body{
     background-color: #7A8499;
     text-align: center;
     padding-top: 300px;
@@ -356,7 +356,111 @@
 @keyframes example {
     from {background-color: red;}
     to {background-color: yellow;}
+} */
+
+
+/* Arif */
+
+.small-container {
+  background: #1f1f47;
+  width: 100%;
+  max-width: 500px;
+  height: 500px;
+  position: relative;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
+
+.custom-card {
+  width: 300px;
+  height: 300px;
+  background: rgba( 255, 255, 255, 0.15 );
+  box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+  backdrop-filter: blur( 18px );
+  -webkit-backdrop-filter: blur( 18px );
+  border: 1px solid rgba( 255, 255, 255, 0.18 );
+  border-radius: 1rem;
+  padding: 1.5rem;
+  z-index: 10;
+  color: whitesmoke;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.custom-title {
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+}
+
+.custom-subtitle {
+  font-size: 0.8rem;
+  margin-bottom: 1.5rem;
+}
+
+.custom-btn {
+  background: none;
+  border: none;
+  text-align: center;
+  font-size: 0.8rem;
+  color: whitesmoke;
+  background-color: #fa709a;
+  padding: 0.5rem 1rem;
+  border-radius: 1rem;
+  cursor: pointer;
+}
+
+.custom-blob {
+  position: absolute;
+  width: 100%; /* Adjusted from 500px to 100% */
+  height: 100%; /* Adjusted from 500px to 100% */
+  background: linear-gradient(
+    180deg,
+    rgba(47, 184, 255, 0.42) 31.77%,
+    #5c9df1 100%
+  );
+  mix-blend-mode: color-dodge;
+  animation: move 25s infinite alternate;
+  transition: 1s cubic-bezier(0.07, 0.8, 0.16, 1);
+}
+
+.custom-blob:hover {
+  width: 110%;
+  height: 110%;
+  -webkit-filter: blur(30px);
+  filter: blur(30px);
+  box-shadow:
+    inset 0 0 0 5px rgba(255, 255, 255, 0.6),
+    inset 50px 50px 0 0px #fa709a,
+    inset 100px 100px 0 0px #784ba8,
+    inset 150px 150px 0 0px #2b86c5;
+}
+
+@keyframes move {
+  from {
+    transform: translate(-10%, -5%) rotate(-90deg);
+    border-radius: 24% 76% 35% 65% / 27% 36% 64% 73%;
+  }
+
+  to {
+    transform: translate(10%, 2%) rotate(-10deg);
+    border-radius: 76% 24% 33% 67% / 68% 55% 45% 32%;
+  }
+}
+
+/* Media Query for Responsiveness */
+@media screen and (max-width: 500px) {
+  .custom-card {
+    width: 90%;
+  }
+}
+
+
+
+/* Arif 2 */
 
 .Connected-companies{
     height: 200px;

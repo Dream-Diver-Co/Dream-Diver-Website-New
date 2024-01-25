@@ -344,6 +344,11 @@
     }
 }
 
+.testUp {
+  -webkit-animation: testUp 1s;
+  animation: testUp 1s;
+}
+
   /* Choosing us */
   /* .Choosing-body{
     background-color: #7A8499;

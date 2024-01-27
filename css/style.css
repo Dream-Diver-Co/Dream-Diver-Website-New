@@ -548,13 +548,18 @@
   }
   
   .flip-box-back {
-    background-color: #ff4f00;
+    background-color: #1000f5;
     color: white;
     transform: rotateY(180deg);
   }
   .flip-text{
     text-align: center !important;
     font-weight: 400 !important;
+    margin-top: 110px;
+  }
+  .flip-btn{
+    border-radius: 5px;
+    background-color: #2b86c5;
   }
  .img-service{
    height: 100% !important;

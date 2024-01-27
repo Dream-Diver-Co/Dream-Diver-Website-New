@@ -367,16 +367,20 @@
 /* Arif */
 
 .small-container {
+  margin: 15px;
   background: #1f1f47;
   width: 100%;
   max-width: 500px;
-  height: 500px;
+  height: 97%;
   position: relative;
   overflow: hidden;
   display: flex;
   justify-content: center;
   align-items: center;
+  border-radius: 1.5rem;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 0px 10px 5px;
 }
+
 
 .custom-card {
   width: 300px;
@@ -1130,20 +1134,20 @@
   
   .form-wrapper {
     width: 100%;
-    max-width: 28rem;
+    /* max-width: 28rem; */
   }
   .form-contact{
     margin-left: 50%;
   }
   
   .form {
+    margin: 15px;
     padding: 1rem;
     background-color: var(--white);
-    /* background-color: white; */
     border-radius: 1.5rem;
     width: 100%;
     box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
-    transform: scale(0);
+    /* transform: scale(0); */
     transition: .5s ease-in-out;
     transition-delay: 1s;
   }

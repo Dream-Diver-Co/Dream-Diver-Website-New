@@ -179,11 +179,26 @@
 }
 /* Hero Section  */
 .hero {
+  position: relative;
   height: 800px;
-  background-color: #ffffff;  
   display: flex;
   align-items: center;
-  justify-content: center; /* Center the content horizontally and vertically */
+  justify-content: center;
+  overflow: hidden; /* Ensure that the pseudo-element doesn't overflow */
+}
+
+.hero::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background-image: url('./images/banner5.jpg'); /* Add your background image path */
+  background-size: cover;
+  background-position: center center;
+  filter: blur(5px); /* Adjust the blur intensity as needed */
+  z-index: -1; /* Place the blurry background behind the content */
 }
 
 .solar {

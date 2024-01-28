@@ -171,8 +171,11 @@
 }
 /* <!-- Page Header Start --> */
 .py-5 {
-  padding-top: 1rem !important;
-  padding-bottom: 1rem !important;
+  padding-top: 5px !important;
+  padding-bottom: 5px !important;
+}
+.mb-4 {
+  margin-bottom: 5px!important;
 }
 /* Hero Section  */
 .hero {
@@ -385,7 +388,7 @@
   margin: 15px;
   background: #1f1f47;
   width: 100%;
-  max-width: 500px;
+  max-width: 97%;
   height: 97%;
   position: relative;
   overflow: hidden;
@@ -487,6 +490,111 @@
 
 /* Arif 2 */
 
+/* Review card start */
+
+.small-container-review {
+  margin: 15px;
+  background: #1f1f47;
+  width: 100%;
+  max-width: 97%;
+  height: 600px;
+  position: relative;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 1.5rem;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 0px 10px 5px;
+}
+
+
+.custom-card-review {
+  width: 80%;
+  height: 80%;
+  background: rgba( 255, 255, 255, 0.15 );
+  box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+  backdrop-filter: blur( 18px );
+  -webkit-backdrop-filter: blur( 18px );
+  border: 1px solid rgba( 255, 255, 255, 0.18 );
+  border-radius: 1rem;
+  padding: 1.5rem;
+  z-index: 10;
+  color: whitesmoke;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.custom-title-review {
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+  color: white;
+}
+
+.custom-subtitle-review {
+  font-size: 0.8rem;
+  margin-bottom: 1.5rem;
+}
+
+.custom-btn-review {
+  background: none;
+  border: none;
+  text-align: center;
+  font-size: 0.8rem;
+  color: white;
+  background-color: orangered;
+  padding: 0.5rem 0.5rem ;
+  border-radius: 1rem;
+  cursor: pointer;
+  margin: auto !important;
+}
+
+.custom-blob-review {
+  position: absolute;
+  width: 100%; /* Adjusted from 500px to 100% */
+  height: 100%; /* Adjusted from 500px to 100% */
+  background: linear-gradient(
+    180deg,
+    rgba(47, 184, 255, 0.42) 31.77%,
+    #5c9df1 100%
+  );
+  /* mix-blend-mode: color-dodge; */
+  animation: move 25s infinite alternate;
+  transition: 1s cubic-bezier(0.07, 0.8, 0.16, 1);
+}
+
+.custom-blob-review:hover {
+  width: 110%;
+  height: 110%;
+  -webkit-filter: blur(30px);
+  filter: blur(30px);
+  box-shadow:
+    inset 0 0 0 5px rgba(255, 255, 255, 0.6),
+    inset 50px 50px 0 0px #fa709a,
+    inset 100px 100px 0 0px #784ba8,
+    inset 150px 150px 0 0px #2b86c5;
+}
+
+@keyframes move {
+  from {
+    transform: translate(-10%, -5%) rotate(-90deg);
+    border-radius: 24% 76% 35% 65% / 27% 36% 64% 73%;
+  }
+
+  to {
+    transform: translate(10%, 2%) rotate(-10deg);
+    border-radius: 76% 24% 33% 67% / 68% 55% 45% 32%;
+  }
+}
+
+/* Media Query for Responsiveness */
+@media screen and (max-width: 500px) {
+  .custom-card-review {
+    width: 90%;
+  }
+}
+ /* reivew card end */
 .Connected-companies{
     height: 200px;
     background-color: bisque;
@@ -508,14 +616,15 @@
 }
 .owl-carousel-row{
  padding: 10px;
+ margin-top: 20px;
 }
 .card-img-top{
     height: 100px;
-    /* width: 50% !important; */
+    width: 80% !important;
     /* border-radius: 50%; */
     margin: auto;
-    margin-left: auto;
-    margin-right: auto;
+    margin-left: 5px;
+    margin-right: 5px;
     margin-top: auto;
 }
 /* .card-img-top:hover {
@@ -569,7 +678,7 @@
   }
   .flip-text{
     text-align: center !important;
-    font-weight: 400 !important;
+    font-weight: 900 !important;
     margin-top: 110px;
   }
   .flip-btn{
@@ -648,16 +757,16 @@
 
 .carousel-control-prev,
 .carousel-control-next {
-    width: 15%;
+    width: auto;
 }
 
 .carousel-control-prev-icon,
 .carousel-control-next-icon {
-    width: 3rem;
-    height: 3rem;
-    background-color: var(--dark);
-    border: 12px solid var(--dark);
-    border-radius: 3rem;
+    width: 1.5rem;
+    height: 1.5rem;
+    /* background-color: var(--dark);
+    border: 12px solid var(--white);
+    border-radius: 3rem; */
 }
 
 @media (max-width: 768px) {
@@ -675,7 +784,7 @@
 }
 
 .page-header {
-    background-color: #663399;
+    background-color: #0d1369;
     background-size: cover;
 }
 
@@ -936,7 +1045,7 @@
 }
 
 *--------------------------------------------------------------
-# Portfolio
+/* # Portfolio */
 --------------------------------------------------------------*/
 #portfolio {
   position: relative;
@@ -1095,7 +1204,7 @@
 .section-title h2 {
     margin-bottom: 60px;
 }
-=======
+/* ======= */
 
 /* codepan-login */
 /* :root {
@@ -1132,7 +1241,7 @@
     /* min-height: 100vh; */
     overflow: hidden;
   }
-  .container-cod{
+  .container-co{
     max-width:100%;
   }
   
@@ -1492,3 +1601,35 @@
   }
 
 
+  .display-4 {
+    text-shadow: 5px 5px 10px #FF0000;
+  }
+
+  /* contact-icon start */
+  .contact-icon{
+    height: 200px;
+    margin-bottom: auto;
+    margin-top: 15px;
+  }
+
+.contact-icon span {
+    font-size: 40px;
+    color: #393bad;
+}
+.contact-icon h4 {
+  color: #1c1c1c;
+  font-weight: 700;
+  margin-bottom: 6px;
+  margin-top: 18px;
+}
+.contact-icon p {
+  color: #666666;
+  margin-bottom: 0;
+  font-size: 16px;
+  font-family: "Cairo", sans-serif;
+  color: #6f6f6f;
+  font-weight: 400;
+  line-height: 26px;
+  margin: 0 0 15px 0;
+
+}

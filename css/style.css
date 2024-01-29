@@ -209,8 +209,8 @@
   margin: auto; /* Center the solar system within the hero container */
 }
 .sun-img{
-    height: 130%;
-    width: 130%;
+    height: 200%;
+    width: 200%;
 }
 .sun {
     display: flex;
@@ -225,55 +225,67 @@
     box-shadow: 0 0 3em rgb(255, 128, 0);
     /* animation: orbit 50s linear infinite; */
 }
+.earth,
 .jupiter,
 .saturn,
 .uranus,
 .neptune,
 .pluto {
     position: absolute;
+    border-style: solid;
+    border-color: rgb(212, 103, 103) transparent transparent transparent;
+    border-width: 0.1em 0.1em 0 0;
+    border-radius: 50%;
 }
-
-.jupiter {
-    top: -2em;
-    left: -2em;
+.earth {
+    top: -15em;
+    left: -15em;
     width: 70em;
     height: 70em; 
-    animation: orbit 21s linear infinite;
+    animation: orbit 24s linear infinite;
+    animation-delay: 20s;
+}
+.jupiter {
+    top: -15em;
+    left: -15em;
+    width: 70em;
+    height: 70em; 
+    animation: orbit 24s linear infinite;
+    animation-delay: 12s;
 }
 .saturn {
-    top: -7em;
-    left: -7em;
-    width: 55em;
-    height: 55em; 
-    animation: orbit 17s linear infinite;
+    top: -15em;
+    left: -15em;
+    width: 70em;
+    height: 70em;
+    animation: orbit 24s linear infinite;
+    animation-delay: 4s;
 }
 .uranus {
-    top: -12em;
-    left: -12em;
-    width: 65em;
-    height: 65em; 
-    animation: orbit 19s linear infinite;
+    top: -30em;
+    left: -30em;
+    width: 100em;
+    height: 100em; 
+    animation: orbit 24s linear infinite;
+    animation-delay: 16s;
 }
 .neptune {
-    top: -17em;
-    left: -17em;
-    width: 75em;
-    height: 75em; 
-    animation: orbit 15s linear infinite;
+    top: -30em;
+    left: -30em;
+    width: 100em;
+    height: 100em; 
+    animation: orbit 24s linear infinite;
+    animation-delay: 8s;
 }
 .pluto {
-    top: -22em;
-    left: -22em;
-    width: 85em;
-    height: 85em; 
-    animation: orbit 18s linear infinite;
+    top: -30em;
+    left: -30em;
+    width: 100em;
+    height: 100em; 
+    animation: orbit 24s linear infinite;
 }
 
-.mercury::before,
-.venus::before,
 .earth::before,
-.moon::before,
-.mars::before,
 .jupiter::before,
 .saturn::before,
 .uranus::before,
@@ -282,78 +294,57 @@
     content: '';
     position: absolute;
     border-radius: 50%;
-    animation: orbit 30s linear infinite;
+    transform-origin: center center;
+    animation: orbit 24s linear infinite;
 }
-.mercury::before {
-    top: 1.5em;
-    right: 0.8em;
-    width: 2em;
-    height: 2em;
-    background-image: url('./images/Service.png');
-    background-size: cover;
-}
-.venus::before {
-    top: 2em;
-    right: 2em;
-    width: 2em;
-    height: 2em;
-    background-image: url('./images/Service.png');
-    background-size: cover;
-}
-.mars::before {
-    top: 5em;
+.earth::before {
+    top: 3em;
     right: 3em;
-    width: 3em;
-    height: 3em;
-    background-image: url('./images/wd2.png');
+    width: 20em;
+    height: 20em;
+    background-image: url('./images/softwaredev.png');
     background-size: cover;
+    transform: rotate(-25deg);
 }
 .jupiter::before {
-    top: -10em;
-    left: 5em;
-    width: 16em;
-    height: 16em;
-    background-image: url('./images/ad.png');
+  top: 3em;
+  right: 3em;
+    width: 20em;
+    height: 20em;
+    background-image: url('./images/appdev.png');
     background-size: cover;
 }
 .saturn::before {
-    top: -20em;
-    right: -20em;
-    width: 12em;
-    height: 12em;
-    background-image: url('./images/wd2.png');
+  top: 3em;
+  right: 3em;
+    width: 20em;
+    height: 20em;
+    background-image: url('./images/softwareservices.png');
     background-size: cover;
 }
 .uranus::before {
-    top: -15em;
-    right: 6.5em;
-    width: 18em;
-    height: 18em;
-    background-image: url('./images/SWD.png');
+    top: 10em;
+    right: 10em;
+    width: 20em;
+    height: 20em;
+    background-image: url('./images/webdevedesign.png');
     background-size: cover;
 }
 .neptune::before {
-    top: 60em;
-    right: 8em;
-    width: 15em;
-    height: 15em;
-    background-image: url('./images/sws.png');
-    background-size: cover;
-}
-.pluto::before {
-    top: 30em;
+    top: 10em;
     right: 10em;
     width: 20em;
     height: 20em;
     background-image: url('./images/seo.png');
     background-size: cover;
 }
-
-.star {
-    position: absolute;
-    background-color: white;
-    border-radius: 50%;
-    z-index: -1;
+.pluto::before {
+    top: 10em;
+    right: 10em;
+    width: 20em;
+    height: 20em;
+    background-image: url('./images/digitalmarketing.png');
+    background-size: cover;
 }
 
 @keyframes orbit {

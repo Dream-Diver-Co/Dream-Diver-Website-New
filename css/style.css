@@ -123,7 +123,7 @@
 
 .navbar .navbar-nav .nav-link:hover,
 .navbar .navbar-nav .nav-link.active {
-    color: #d63384;
+    color: #3633d6 !important;
 }
 
 .navbar .dropdown-toggle::after {
@@ -174,8 +174,20 @@
   padding-top: 5px !important;
   padding-bottom: 5px !important;
 }
+.py-6 {
+  padding-top: 50px !important;
+  padding-bottom: 50px !important;
+}
+.py-7 {
+  padding-top: 20px !important;
+
+}
 .mb-4 {
   margin-bottom: 5px!important;
+}
+.display-6 {
+  padding-bottom: 15px;
+  text-shadow: 0px 5px 5px #3f6ce9;
 }
 /* Hero Section  */
 .hero {
@@ -534,7 +546,7 @@
   text-align: center;
   font-size: 0.8rem;
   color: white;
-  background-color: orangered;
+  background-color: #1F1F47;
   padding: 0.5rem 0.5rem ;
   border-radius: 1rem;
   cursor: pointer;
@@ -663,7 +675,7 @@
   }
   
   .flip-box-back {
-    background-color: #1000f5;
+    background-color: #21217c;
     color: white;
     transform: rotateY(180deg);
   }
@@ -710,8 +722,14 @@
   border-radius: 13px;
 }
 .nav-pills .nav-link.active, .nav-pills .show>.nav-link {
-  color: #fff;
-  background-color: #FF4f00;
+  color: #fff !important;
+  background-color: #1F1F47;
+}
+.nav-link{
+  color: black !important;
+}
+.nav-link:hover{
+  color: blue !important;
 }
 
 
@@ -1303,6 +1321,18 @@
     /* border-color: white; */
     outline: none;
   }
+  .input-group textarea {
+    /* width: 100% !important; */
+    padding: 1rem 3rem;
+    font-size: 1rem;
+    background-color: var(--gray);
+    /* background-color: gray; */
+    border-radius: .5rem;
+    border: 0.125rem solid var(--white);
+    border: 0.125rem;
+    /* border-color: white; */
+    outline: none;
+  }
   
   .input-group input:focus {
     /* border: 0.125rem solid var(--primary-color); */
@@ -1322,6 +1352,11 @@
     font-size: 1.2rem;
     outline: none;
   }
+  .accordion-button {
+    color: black !important;
+    font-weight: 900;
+    background-color: #f5f5f5 !important;
+}
   
   .form p {
     margin: 1rem 0;
@@ -1595,7 +1630,14 @@
 
 
   .display-4 {
-    text-shadow: 5px 5px 10px #FF0000;
+    text-shadow: 5px 5px 10px #0043ff;
+  }
+
+  .choos-btn{
+    border-radius: 5px;
+    background-color: #001064;
+    color: wheat;
+    box-shadow: rgba(0, 0, 0, 0.35) 3px 3px 5px 2px;
   }
 
   /* contact-icon start */
@@ -1628,6 +1670,10 @@
 }
 
 /* ============= */
+.timeline{
+  margin: 15px;
+  /* border-radius: 1.5rem; */
+}
 .timeline .timeline-item {
   position: relative;
 }
@@ -1698,6 +1744,7 @@
   width: 64px;
   height: 64px;
   background-color: #1F1F47;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 0px 10px 5px;
 }
 .rounded-circle {
   border-radius: 50%!important;
@@ -1735,11 +1782,12 @@
 
 
 .timeline .timeline-box {
+  padding: auto;
   position: relative;
   background-color: #e5e5e5;
   border-radius: 10px;
+  box-shadow: rgba(0, 0, 0, 0.35) 3px 3px 5px 2px;
 }
-
 
 
 /* .rounded-4 {
@@ -1767,6 +1815,7 @@
   -moz-transform: translate(-50%,-50%) rotate(45deg);
   transform: translate(-50%,-50%) rotate(45deg);
   z-index: -1;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 0px 5px 2px;
 }
 .font-weight-700 {
   font-weight: 700;
@@ -1801,3 +1850,91 @@ p {
   margin-top: 0;
   margin-bottom: 1rem;
 } */
+
+
+/* menu dropdown */
+
+.dropbtn {
+  /* background-color: #04AA6D;
+  color: white;
+  padding: 16px;
+  font-size: 16px; */
+  border: none;
+  background-color: white;
+}
+
+/* .dropdown {
+  position: relative;
+  display: inline-block;
+} */
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f1f1f1;
+  min-width: 250px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+  /* text-align: center; */
+  border-radius: 15px;
+}
+
+.dropdown-content a {
+  color: black;
+  padding: 5px 5px;
+  text-decoration: none;
+  display: block;
+}
+
+.dropdown-content a:hover {
+  color: white;
+  background-color: #1F1F47;
+  border-radius: 10px;
+}
+.fa-caret-down{
+  margin-left: 5px;
+}
+
+.dropdown:hover .dropdown-content {display: block;}
+
+/* .dropdown:hover .dropbtn {background-color: #3e8e41;} */
+
+
+
+
+
+/* slide in  */
+.slide-section {
+  position: relative;
+  top: 0;
+  left: -100%; 
+  width: 100%;
+  /* height: 100vh; */
+  /* background-color: #f0f0f0; */
+  animation: slideIn 0.9s ease forwards;
+  /* padding: 20px; */
+}
+.slide-form {
+  position: relative;
+  top: 0;
+  left: -100%; 
+  width: 100%;
+  animation: slideIn 0.9s ease forwards;
+ 
+}
+.slide-benar {
+  position: relative;
+  top: 0;
+  left: 100%; 
+  width: 100%;
+  animation: slideIn 0.9s ease forwards;
+ 
+}
+
+@keyframes slideIn {
+  to {
+      left: 0;
+  }
+}
+
+

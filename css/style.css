@@ -130,8 +130,9 @@ body {
     margin-left: 25px;
     padding: 10px 0;
     color: #000000;
-    font-weight: 400;
+    font-weight: 900;
     outline: none;
+    
 }
 
 .navbar .navbar-nav .nav-link:hover,
@@ -205,7 +206,7 @@ body {
 /* Hero Section  */
 .hero {
   position: relative;
-  height: 800px;
+  height: 850px;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -396,11 +397,11 @@ body {
 /* Arif */
 
 .small-container {
-  margin: 15px;
+  margin-top: 8px;
   background: #1f1f47;
   width: 100%;
   max-width: 97%;
-  height: 97%;
+  height: 96%;
   position: relative;
   overflow: hidden;
   display: flex;
@@ -612,7 +613,7 @@ body {
 }
 
 .bg-white{
-    background-color: white !important;
+    background-color: rgb(182, 177, 231) !important;
 }
 
 .bg-white-rgb{
@@ -683,14 +684,36 @@ body {
   }
   
   .flip-box-back {
-    background-color: #21217c;
+    /* background-color: #21217c; */
     color: white;
     transform: rotateY(180deg);
+    
+  }
+  .flip-box-back .img-service{
+    /* background-color: #21217c;
+    color: white;
+    transform: rotateY(180deg); */
+    filter: blur(5px);
+    z-index: -1;
   }
   .flip-text{
-    text-align: center !important;
+    /* text-align: center !important;
     font-weight: 900 !important;
-    margin-top: 110px;
+    margin-top: -203px;
+    z-index: -1; */
+    background-color: rgb(0,0,0);
+    background-color: rgba(0,0,0, 0.4); 
+    color: white;
+    font-weight: bold;
+    border: 3px solid #f1f1f1;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 2;
+    width: 80%;
+    padding: 20px;
+    text-align: center;
   }
   .flip-btn{
     padding-left: 5px;
@@ -1687,7 +1710,7 @@ body {
 
 /* ============= */
 .timeline{
-  margin: 15px;
+  margin-top: 10px;
   /* border-radius: 1.5rem; */
 }
 .timeline .timeline-item {
@@ -1800,7 +1823,7 @@ body {
 .timeline .timeline-box {
   padding: auto;
   position: relative;
-  background-color: #e5e5e5;
+  background-color: #efefef;
   border-radius: 10px;
   box-shadow: rgba(0, 0, 0, 0.35) 3px 3px 5px 2px;
 }
@@ -1823,7 +1846,7 @@ body {
 .timeline .timeline-box .timeline-box-arrow {
   width: 10px;
   height: 10px;
-  background-color: #e5e5e5;
+  background-color: #efefef;
   position: absolute;
   left: 0;
   top: 50%;
@@ -1876,7 +1899,7 @@ p {
   padding: 16px;
   font-size: 16px; */
   border: none;
-  background-color: white;
+  background-color: rgb(182, 177, 231);
 }
 
 /* .dropdown {
@@ -1900,6 +1923,8 @@ p {
   padding: 5px 5px;
   text-decoration: none;
   display: block;
+  font-style: italic;
+  font-weight: bold;
 }
 
 .dropdown-content a:hover {

@@ -718,7 +718,7 @@ body {
   .flip-btn{
     padding-left: 5px;
     border-radius: 5px;
-    background-color: #21217C;
+    background-color: #EFEFEF;
     box-shadow: rgba(0, 0, 0, 0.35) 3px 3px 5px 2px;
     border: teal;
     font-weight: 900;
@@ -1063,7 +1063,7 @@ body {
 
 .footer .btn.btn-link:hover {
     /* color: var(--primary); */
-    color: #001064;
+    color: #10183f !important;
     letter-spacing: 1px;
     box-shadow: none;
 }
@@ -1900,7 +1900,7 @@ p {
   padding: 16px;
   font-size: 16px; */
   border: none;
-  background-color: rgb(182, 177, 231);
+  /* background-color: rgb(182, 177, 231); */
 }
 
 /* .dropdown {
@@ -1999,7 +1999,7 @@ p {
     font-size: 35px;
   }
   a:hover {
-    color: #ffffff !important;
+    color: #0a0330 !important;
   }
   /* for mobile */
   @media screen and (max-width: 767px){
@@ -2016,3 +2016,20 @@ p {
       font-size: 22px;
     }
   }
+
+  .service-text{
+    font-weight:bolder;
+    font-size: x-large;
+  }
+  .portfolio-text{
+    font-weight:bolder;
+    font-size: x-large;
+  }
+  .Subscribe {
+    width: 130px;
+    height: 40px;
+    border-radius: 20px;
+    background-color: black;
+    color: white;
+    font-size: larger;
+}

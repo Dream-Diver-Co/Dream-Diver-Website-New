@@ -1929,7 +1929,7 @@ p {
 }
 
 .dropdown-content a:hover {
-  color: white;
+  color: white !important;
   background-color: #1F1F47;
   border-radius: 10px;
 }

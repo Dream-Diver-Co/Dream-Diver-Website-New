@@ -114,7 +114,7 @@
         <hr>
         <div class="tab-content slide-section" id="pills-tabContent">
             <div class="tab-pane fade slide-section show active" id="pills-home" role="tabpanel" aria-labelledby="pills-home-tab" tabindex="0"> 
-                <h1>De-Was</h1>
+                <p>De-Was</p>
                 <br><br>
                 Digital marketing is a broad term that encompasses all marketing efforts that use an electronic device or the internet. It's a dynamic field that continues to evolve with new technologies and platforms. Digital marketing allows businesses to reach and connect with their target audience online and promote their products or services. Here are some key components of digital marketing:
                 <br><br>
@@ -191,7 +191,7 @@
                             <div class="row g-5">
                                 <div class="col-lg-6 wow fadeInUp" data-wow-delay="0.1s">
                                     <div class="slide-form">
-                                        <h1 class="about-h3">Text Review</h1>
+                                        <p class="about-h3">Text Review</p>
                                     <p class="about-us">Our core values are the fundamental base for our business culture and business philosophy.
                                         The values define us as a service provider and help us make our decisions and deploy them.</p>
                                     <br>
@@ -218,7 +218,7 @@
                                     </div>
                                 </div>
                                 <div class="col-lg-6 wow fadeInUp  " data-wow-delay="0.5s">
-                                    <h1>video Review</h1>
+                                    <p>video Review</p>
                                     <div class="small-container align-items-center slide-benar">
                                         <div class="custom-card">
                                               <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
@@ -280,19 +280,21 @@
                 </div>
                 <div class="col-lg-3 col-md-6">
                     <h5 class="text-highlight mb-4">Quick Links</h5>
-                    <a class="btn btn-link" href="">About Us</a>
-                    <a class="btn btn-link" href="">Contact Us</a>
-                    <a class="btn btn-link" href="">Our Services</a>
-                    <a class="btn btn-link" href="">Terms & Condition</a>
+                    <a class="btn btn-link" href="about-us.html">About Us</a>
+                    <a class="btn btn-link" href="contact.html">Contact Us</a>
+                    <a class="btn btn-link" href="service.html">Our Services</a>
+                    <a class="btn btn-link" href="terms-conditions.html">Terms & Condition</a>
                 </div>
                 <div class="col-lg-3 col-md-6">
                     <h5 class="text-highlight mb-4">Follow Us</h5>
                     <div class="d-flex">
-                        <a class="btn btn-square rounded-circle me-1" href=""><i class="fab fa-twitter"></i></a>
-                        <a class="btn btn-square rounded-circle me-1" href=""><i class="fab fa-facebook-f"></i></a>
-                        <a class="btn btn-square rounded-circle me-1" href=""><i class="fab fa-youtube"></i></a>
+                        <a class="btn btn-square rounded-circle me-1" href="https://twitter.com/home?logout=1701946567424"><i class="fab fa-twitter"></i></a>
+                        <a class="btn btn-square rounded-circle me-1" href="https://www.facebook.com/dreamdivernl"><i class="fab fa-facebook-f"></i></a>
+                        <a class="btn btn-square rounded-circle me-1" href="https://www.instagram.com/dream_diver1/?hl=en"><i class="fab fa-instagram"></i></a>
                         <a class="btn btn-square rounded-circle me-1" href=""><i class="fab fa-linkedin-in"></i></a>
                     </div>
+                    <br>
+                    <button class="Subscribe">Subscribe</button>
                 </div>
             </div>
         </div>
@@ -303,7 +305,7 @@
                         &copy; 2017, Dream Diver IT Solutions. All Rights Reserved.
                     </div>
                     <div class="col-md-6 text-center text-md-end">
-                        <!--/*** This template is free as long as you keep the footer author’s credit link/attribution link/backlink. If you'd like to use the template without the footer author’s credit link/attribution link/backlink, you can purchase the Credit Removal License from "https://htmlcodex.com/credit-removal". Thank you for your support. ***/-->
+                   
                         Developed By <a href="https://dreamdiver.nl">Dream Diver</a> 
                     </div>
                 </div>
@@ -311,8 +313,9 @@
         </div>
     </div>
     <!-- Footer End -->
-
-
+   
+    <!-- whatsapp -->
+    <a href="https://web.whatsapp.com/send?phone=+31644215009text=Hi,%20How%20can%20i%20help%20you?"  target="_blank" class="whatsapp_float"><i class="bi bi-whatsapp whatsapp-icon-bi"></i></a>
     <!-- Back to Top -->
     <a href="#" class="btn btn-lg btn-primary btn-lg-square rounded-circle back-to-top"><i class="bi bi-arrow-up"></i></a>
 
@@ -323,8 +326,47 @@
 
     <!-- Template Javascript -->
     <script src="js/main.js"></script>
+     <!-- jquery cdn link -->
+     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js" integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 
+     <!-- owl carousel -->
+     <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js" integrity="sha512-bPs7Ae6pVvhOSiIcyUClR7/q2OAsRiovw4vAkX+zJbw3ShAeeqezq50RIIcIURq7Oa20rW2n2q+fyXBNcU9lrw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+     <script>
+         $('.owl-carousel').owlCarousel({
+             loop:true,
+             margin:10,
+             nav:true,
+             responsive:{
+                 0:{
+                     items:1
+                 },
+                 600:{
+                     items:2
+                 },
+                 1000:{
+                     items:4
+                 }
+             }
+         })
+     </script>
+
+    <script type="application/ld+json">
+        {
+            "@context": "https://schema.org/",
+            "@type": "WebSite",
+            "name": "Dream Diver",
+            "url": "https://www.dreamdiver.nl/",
+            "potentialAction": {
+                "@type": "SearchAction",
+                "target": "https://dreamdiver.nl/search?q=example+query{search_term_string}https://dreamdiver.nl/search?q=example+query",
+                "query-input": "required name=search_term_string"
+            }
+        }
+    </script>
       
+
+
+
 </body>
 
 </html>

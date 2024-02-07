@@ -114,7 +114,7 @@
         <hr>
         <div class="tab-content slide-section" id="pills-tabContent">
             <div class="tab-pane fade slide-section show active" id="pills-home" role="tabpanel" aria-labelledby="pills-home-tab" tabindex="0"> 
-                <h1>Research</h1>
+                <p>Research</p>
                 <br><br>
                 At this stage, you will collect all the information that will be required for decision making in the next stages. Information collected during the research will become your raw material to strategize & create your digital marketing campaign. This stage can also be called as Digital Marketing Research. At this stage, you will research 4 sets of information:
 
@@ -125,7 +125,7 @@
                 Each set is unique & equally important. You will require multiple sources to collect the information.
             </div>
             <div class="tab-pane fade slide-section" id="pills-profile" role="tabpanel" aria-labelledby="pills-profile-tab" tabindex="0">
-                <h1>Create</h1>
+                <p>Create</p>
                 <br>
                 Once you collect information at the research stage, you can now start creating:
                 1 – Digital Marketing Objectives / Goals: These are the ultimate goals that you want to achieve through your Digital Marketing Campaign. Every business is unique, therefore their goals will also be unique. Campaigns without clear goals will end up spending money without the assurance of achieving goals. What goals you should set, can be answered after looking at information collected at the Digital Marketing Research stage.  Learn more about Digital Marketing Objectives / Goals.
@@ -202,19 +202,21 @@
                 </div>
                 <div class="col-lg-3 col-md-6">
                     <h5 class="text-highlight mb-4">Quick Links</h5>
-                    <a class="btn btn-link" href="">About Us</a>
-                    <a class="btn btn-link" href="">Contact Us</a>
-                    <a class="btn btn-link" href="">Our Services</a>
-                    <a class="btn btn-link" href="">Terms & Condition</a>
+                    <a class="btn btn-link" href="about-us.html">About Us</a>
+                    <a class="btn btn-link" href="contact.html">Contact Us</a>
+                    <a class="btn btn-link" href="service.html">Our Services</a>
+                    <a class="btn btn-link" href="terms-conditions.html">Terms & Condition</a>
                 </div>
                 <div class="col-lg-3 col-md-6">
                     <h5 class="text-highlight mb-4">Follow Us</h5>
                     <div class="d-flex">
-                        <a class="btn btn-square rounded-circle me-1" href=""><i class="fab fa-twitter"></i></a>
-                        <a class="btn btn-square rounded-circle me-1" href=""><i class="fab fa-facebook-f"></i></a>
-                        <a class="btn btn-square rounded-circle me-1" href=""><i class="fab fa-youtube"></i></a>
+                        <a class="btn btn-square rounded-circle me-1" href="https://twitter.com/home?logout=1701946567424"><i class="fab fa-twitter"></i></a>
+                        <a class="btn btn-square rounded-circle me-1" href="https://www.facebook.com/dreamdivernl"><i class="fab fa-facebook-f"></i></a>
+                        <a class="btn btn-square rounded-circle me-1" href="https://www.instagram.com/dream_diver1/?hl=en"><i class="fab fa-instagram"></i></a>
                         <a class="btn btn-square rounded-circle me-1" href=""><i class="fab fa-linkedin-in"></i></a>
                     </div>
+                    <br>
+                    <button class="Subscribe">Subscribe</button>
                 </div>
             </div>
         </div>
@@ -225,7 +227,7 @@
                         &copy; 2017, Dream Diver IT Solutions. All Rights Reserved.
                     </div>
                     <div class="col-md-6 text-center text-md-end">
-                        <!--/*** This template is free as long as you keep the footer author’s credit link/attribution link/backlink. If you'd like to use the template without the footer author’s credit link/attribution link/backlink, you can purchase the Credit Removal License from "https://htmlcodex.com/credit-removal". Thank you for your support. ***/-->
+                   
                         Developed By <a href="https://dreamdiver.nl">Dream Diver</a> 
                     </div>
                 </div>
@@ -233,8 +235,9 @@
         </div>
     </div>
     <!-- Footer End -->
-
-
+   
+    <!-- whatsapp -->
+    <a href="https://web.whatsapp.com/send?phone=+31644215009text=Hi,%20How%20can%20i%20help%20you?"  target="_blank" class="whatsapp_float"><i class="bi bi-whatsapp whatsapp-icon-bi"></i></a>
     <!-- Back to Top -->
     <a href="#" class="btn btn-lg btn-primary btn-lg-square rounded-circle back-to-top"><i class="bi bi-arrow-up"></i></a>
 
@@ -245,8 +248,47 @@
 
     <!-- Template Javascript -->
     <script src="js/main.js"></script>
+     <!-- jquery cdn link -->
+     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js" integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 
+     <!-- owl carousel -->
+     <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js" integrity="sha512-bPs7Ae6pVvhOSiIcyUClR7/q2OAsRiovw4vAkX+zJbw3ShAeeqezq50RIIcIURq7Oa20rW2n2q+fyXBNcU9lrw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+     <script>
+         $('.owl-carousel').owlCarousel({
+             loop:true,
+             margin:10,
+             nav:true,
+             responsive:{
+                 0:{
+                     items:1
+                 },
+                 600:{
+                     items:2
+                 },
+                 1000:{
+                     items:4
+                 }
+             }
+         })
+     </script>
+
+    <script type="application/ld+json">
+        {
+            "@context": "https://schema.org/",
+            "@type": "WebSite",
+            "name": "Dream Diver",
+            "url": "https://www.dreamdiver.nl/",
+            "potentialAction": {
+                "@type": "SearchAction",
+                "target": "https://dreamdiver.nl/search?q=example+query{search_term_string}https://dreamdiver.nl/search?q=example+query",
+                "query-input": "required name=search_term_string"
+            }
+        }
+    </script>
       
+
+
+
 </body>
 
 </html>
